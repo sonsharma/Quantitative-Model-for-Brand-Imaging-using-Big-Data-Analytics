@@ -1,0 +1,1 @@
+INSERT OVERWRITE DIRECTORY '/user/ss13449/project/cleaned_data/yelp' ROW FORMAT DELIMITED FIELDS TERMINATED BY ':' SELECT * FROM yelp_review;

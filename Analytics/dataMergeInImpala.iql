@@ -1,0 +1,7 @@
+Insert into Table data_for_analyses select id, date_stamp, business_id, business_name, cast(user_rating as float), city, state, polarity, subjectivity from data_reddit_starbucks;
+
+Insert into Table data_for_analyses select id, date_stamp, business_id, business_name, cast(user_rating as float), city, state, polarity, subjectivity from data_reddit_mcdonalds;
+
+Insert into Table data_for_analyses select id, date_stamp, business_id, business_name, cast(user_rating as float), city, state, polarity, subjectivity from data_twitter_starbucks;
+
+Insert into Table data_for_analyses select id, date_stamp, business_id, business_name, cast(user_rating as float), city, state, polarity, subjectivity from data_twitter_mcdonalds;

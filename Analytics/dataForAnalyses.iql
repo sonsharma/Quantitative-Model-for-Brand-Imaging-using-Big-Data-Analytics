@@ -1,0 +1,1 @@
+INSERT OVERWRITE DIRECTORY '/user/ss13449/project/cleaned_data/data_for_analyses' ROW FORMAT DELIMITED FIELDS TERMINATED BY ':' SELECT * FROM data_for_analyses;

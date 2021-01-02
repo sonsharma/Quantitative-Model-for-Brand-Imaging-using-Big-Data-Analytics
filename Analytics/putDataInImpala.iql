@@ -1,0 +1,9 @@
+create external table data_for_analyses(id string, date_stamp string, business_id string, business_name string, user_rating float, city string, state string, polarity float, subjectivity float) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/analysed_data/';
+
+create external table data_reddit_starbucks(id string, date_stamp string, business_id string, business_name string, user_rating string, city string, state string, polarity float, subjectivity float) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/analysed_data/analysed_data_reddit_starbucks';
+
+create external table data_reddit_mcdonalds(id string, date_stamp string, business_id string, business_name string, user_rating string, city string, state string, polarity float, subjectivity float) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/analysed_data/analysed_data_reddit_mcdonalds';
+
+create external table data_twitter_starbucks(id string, date_stamp string, business_id string, business_name string, user_rating string, city string, state string, polarity float, subjectivity float) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/analysed_data/analysed_data_twitter_starbucks';
+
+create external table data_twitter_mcdonalds(id string, date_stamp string, business_id string, business_name string, user_rating string, city string, state string, polarity float, subjectivity float) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/analysed_data/analysed_data_twitter_mcdonalds/';

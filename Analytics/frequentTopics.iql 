@@ -1,0 +1,7 @@
+create external table fc_starbucks(feature string, count int) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/word_count_starbucks/';
+
+create external table fc_mcdonalds(feature string, count int) row format delimited fields terminated by ':' location '/user/ss13449/project/cleaned_data/word_count_mcdonalds/';
+
+select trim(feature) as features,sum(count) as frequency from fc_starbucks where count > 1 group by features order by sum(count) desc limit 10;
+
+select trim(feature) as features,sum(count) as frequency from fc_mcdonalds where count > 1 group by features order by sum(count) desc limit 10;

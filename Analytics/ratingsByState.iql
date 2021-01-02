@@ -1,0 +1,3 @@
+Select state, avg(user_rating) as average_user_rating, avg((polarity*5)+5)/2 as average_polarity from data_for_analyses where business_name like "%Starbucks%" and user_rating is not null group by state;
+
+Select state, avg(user_rating) as average_user_rating, avg((polarity*5)+5)/2 as average_polarity from data_for_analyses where business_name like "%McDonalds%" and user_rating is not null group by state;
